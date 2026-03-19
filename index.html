@@ -465,17 +465,181 @@
       </div>
     </section>
 
-<!-- CONTACT + MAP & FORM -->
-    <section id="contact" class="contact-section">
-      <div>
-        <h2 class="section-title">Contact Us</h2>
-        <p><i class="fas fa-map-marker-alt"></i> Bhawlagonj, Debiganj, Panchagarh, Bangladesh</p>
-        <p><i class="fas fa-phone-alt"></i> 01309132253</p>
-        <p><i class="fas fa-envelope"></i> info@tbmi.edu.bd</p>
-        <div style="margin-top:1rem;">
-          <h3>Send a Message</h3>
-          <form id="contactForm">
-            <div class="form-group"><input type="text" placeholder="Full Name" required></div>
-            <div class="form-group"><input type="email" placeholder="Email" required></div>
-            <div class="form-group"><input type="tel" placeholder="Phone"></div>
-            <div class="form-group"><texta
+<!-- CONTACT SECTION (NEXT LEVEL) -->
+<section id="contact" class="contact-section" style="align-items:stretch;">
+  
+  <!-- LEFT SIDE -->
+  <div>
+    <h2 class="section-title">Get in Touch</h2>
+
+    <div style="margin-bottom:1.8rem; line-height:1.9; font-size:0.95rem;">
+      <p><i class="fas fa-map-marker-alt"></i> Bhawlagonj, Debiganj, Panchagarh</p>
+      <p><i class="fas fa-phone-alt"></i> +8801309132253</p>
+      <p><i class="fas fa-envelope"></i> info@tbmi.edu.bd</p>
+    </div>
+
+    <!-- FORM -->
+    <div style="
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(12px);
+      padding:2rem;
+      border-radius:1.8rem;
+      box-shadow:0 20px 40px rgba(0,0,0,0.08);
+      border:1px solid rgba(255,255,255,0.4);
+    ">
+      <h3 style="margin-bottom:1.2rem;">📩 Send a Message</h3>
+
+      <form>
+        
+        <!-- NAME -->
+        <div class="form-group" style="position:relative;">
+          <i class="fas fa-user" style="position:absolute; top:50%; left:15px; transform:translateY(-50%); color:#888;"></i>
+          <input type="text" placeholder="Your Name" required 
+          style="padding-left:40px;">
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group" style="position:relative;">
+          <i class="fas fa-envelope" style="position:absolute; top:50%; left:15px; transform:translateY(-50%); color:#888;"></i>
+          <input type="email" placeholder="Your Email" required 
+          style="padding-left:40px;">
+        </div>
+
+        <!-- PHONE -->
+        <div class="form-group" style="position:relative;">
+          <i class="fas fa-phone" style="position:absolute; top:50%; left:15px; transform:translateY(-50%); color:#888;"></i>
+          <input type="tel" placeholder="Phone Number" 
+          style="padding-left:40px;">
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="form-group">
+          <textarea placeholder="Write your message..." rows="4"
+          style="
+            width:100%;
+            padding:1rem;
+            border-radius:1rem;
+            border:1px solid #d0ddee;
+            transition:0.3s;
+          "
+          onfocus="this.style.borderColor='#0a3d62'"
+          onblur="this.style.borderColor='#d0ddee'"></textarea>
+        </div>
+
+        <button class="btn" type="button" 
+        style="width:100%; margin-top:0.5rem;"
+        onclick="alert('Message sent (demo)')">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE MAP -->
+  <div style="
+    background:white;
+    border-radius:2rem;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+    transition:0.4s;
+  " onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+    
+    <iframe 
+      src="https://maps.google.com/maps?q=Panchagarh%20Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      style="width:100%; height:100%; min-height:300px; border:0;">
+    </iframe>
+
+  </div>
+</section>
+
+<!-- FOOTER (ULTRA PRO) -->
+<footer class="footer" style="position:relative; overflow:hidden;">
+
+  <!-- background gradient glow -->
+  <div style="
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,0.05);
+    top:-80px;
+    left:-80px;
+    border-radius:50%;
+  "></div>
+
+  <div class="container" style="
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:2.5rem;
+    position:relative;
+  ">
+
+    <!-- BRAND -->
+    <div>
+      <h2 style="margin-bottom:0.8rem;">TBMI</h2>
+      <p style="font-size:0.95rem; line-height:1.7;">
+        Building skilled professionals through modern technical 
+        and business education since 2004.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div>
+      <h3 style="margin-bottom:1rem;">Navigation</h3>
+      <a href="#home">Home</a><br>
+      <a href="#about">About</a><br>
+      <a href="#departments">Departments</a><br>
+      <a href="#gallery">Gallery</a><br>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- RESOURCES -->
+    <div>
+      <h3 style="margin-bottom:1rem;">Resources</h3>
+      <a href="#">Notice Board</a><br>
+      <a href="#">Results</a><br>
+      <a href="#">Prospectus</a><br>
+      <a href="#">Admission Info</a>
+    </div>
+
+    <!-- SOCIAL -->
+    <div>
+      <h3 style="margin-bottom:1rem;">Follow Us</h3>
+      <div style="display:flex; gap:12px;">
+        <a href="#" style="background:white; color:#0a3d62; padding:10px; border-radius:50%; transition:0.3s;">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" style="background:white; color:#0a3d62; padding:10px; border-radius:50%;">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" style="background:white; color:#0a3d62; padding:10px; border-radius:50%;">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" style="background:white; color:#0a3d62; padding:10px; border-radius:50%;">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- bottom -->
+  <div style="
+    text-align:center;
+    margin-top:2.5rem;
+    padding-top:1rem;
+    border-top:1px solid rgba(255,255,255,0.2);
+    font-size:0.9rem;
+    opacity:0.85;
+  ">
+    © 2026 Technical & Business Management Institute — All Rights Reserved
+  </div>
+
+</footer>
+
+<!-- JS -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+</script>
